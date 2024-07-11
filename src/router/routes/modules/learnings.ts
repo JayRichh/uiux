@@ -22,6 +22,10 @@ const learningsRoutes: Array<any> = [
     redirect: '/learnings/learnt-home'
   },
   {
+    path: '/learnings/learnt-home',
+    component: LearntHome
+  },
+  {
     path: '/learnings',
     component: Learnings,
     children: [

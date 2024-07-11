@@ -1,5 +1,17 @@
 <script setup lang="ts">
 import { RouterLink } from 'vue-router';
+const closeNavbar = () => {
+  const backdrop = document.querySelector('.navbar-collapse');
+  const navbarCollapse = document.querySelector('.navbar-collapse');
+
+  if (backdrop instanceof HTMLElement) {
+    backdrop.classList.remove('show');
+  }
+
+  if (navbarCollapse instanceof HTMLElement) {
+    navbarCollapse.classList.remove('show');
+  }
+}
 </script>
 
 <template>
