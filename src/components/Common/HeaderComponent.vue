@@ -74,7 +74,6 @@ const closeNavbar = () => {
       </div>
     </div>
   </header>
-  <div class="backdrop" @click="closeNavbar"></div>
 </template>
 
 <style scoped>
