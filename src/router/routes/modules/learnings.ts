@@ -1,29 +1,26 @@
-import Learnings from '@/components/Learnings.vue'
-import About from '@/views/About.vue'
-import LearntHome from '@/views/Learning/LearntHome.vue'
-import LearntNav from '@/views/Learning/LearntNav.vue'
-import LearntCards from '@/views/Learning/LearntCards.vue'
-import LearntDashboards from '@/views/Learning/LearntDashboards.vue'
-import LearntEmbellishments from '@/views/Learning/LearntEmbellishments.vue'
-import LearntForms from '@/views/Learning/LearntForms.vue'
-import LearntGenerativeAI from '@/views/Learning/LearntGenerativeAI.vue'
-import LearntHero from '@/views/Learning/LearntHero.vue'
-import LearntPortfolio from '@/views/Learning/LearntPortfolio.vue'
-import LearntPrototyping from '@/views/Learning/LearntPrototyping.vue'
-import LearntResponsive from '@/views/Learning/LearntResponsive.vue'
-import LearntReviewing from '@/views/Learning/LearntReviewing.vue'
-import LearntSubPages from '@/views/Learning/LearntSubPages.vue'
-import LearntTools from '@/views/Learning/LearntTools.vue'
-import LearntUIMeaning from '@/views/Learning/LearntUIMeaning.vue'
+import { type RouteRecordRaw } from 'vue-router';
+import Learnings from '@/components/Learnings.vue';
+import About from '@/views/About.vue';
+import LearntHome from '@/views/Learning/LearntHome.vue';
+import LearntNav from '@/views/Learning/LearntNav.vue';
+import LearntCards from '@/views/Learning/LearntCards.vue';
+import LearntDashboards from '@/views/Learning/LearntDashboards.vue';
+import LearntEmbellishments from '@/views/Learning/LearntEmbellishments.vue';
+import LearntForms from '@/views/Learning/LearntForms.vue';
+import LearntGenerativeAI from '@/views/Learning/LearntGenerativeAI.vue';
+import LearntHero from '@/views/Learning/LearntHero.vue';
+import LearntPortfolio from '@/views/Learning/LearntPortfolio.vue';
+import LearntPrototyping from '@/views/Learning/LearntPrototyping.vue';
+import LearntResponsive from '@/views/Learning/LearntResponsive.vue';
+import LearntReviewing from '@/views/Learning/LearntReviewing.vue';
+import LearntSubPages from '@/views/Learning/LearntSubPages.vue';
+import LearntTools from '@/views/Learning/LearntTools.vue';
+import LearntUIMeaning from '@/views/Learning/LearntUIMeaning.vue';
 
-const learningsRoutes: Array<any> = [
+const learningsRoutes: Array<RouteRecordRaw> = [
   {
     path: '/',
     redirect: '/learnings/learnt-home'
-  },
-  {
-    path: '/learnings/learnt-home',
-    component: LearntHome
   },
   {
     path: '/learnings',
@@ -92,13 +89,9 @@ const learningsRoutes: Array<any> = [
     ]
   },
   {
-    path: '/:catchAll(.*)',
-    redirect: '/learnings/learnt-home'
-  },
-  {
     path: '/about',
     component: About
   }
-]
+];
 
-export default learningsRoutes
+export default learningsRoutes;

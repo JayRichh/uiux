@@ -1,17 +1,5 @@
 <script setup lang="ts">
 import { RouterLink } from 'vue-router';
-const closeNavbar = () => {
-  const backdrop = document.querySelector('.navbar-collapse');
-  const navbarCollapse = document.querySelector('.navbar-collapse');
-
-  if (backdrop instanceof HTMLElement) {
-    backdrop.classList.remove('show');
-  }
-
-  if (navbarCollapse instanceof HTMLElement) {
-    navbarCollapse.classList.remove('show');
-  }
-}
 </script>
 
 <template>
@@ -95,14 +83,6 @@ header {
   box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.dropdown-item,
-.dropdown-item:hover,
-.dropdown-item:focus,
-.nav-link:hover,
-.nav-link:focus {
-  background-color: #495057;
-  color: white;
-}
 
 .dropdown-menu {
   background-color: #6c757d;

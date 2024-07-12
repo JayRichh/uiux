@@ -1,9 +1,9 @@
-# fly.toml app configuration file generated for uiux on 2024-07-11T21:37:25+01:00
+# fly.toml app configuration file generated for uiux-bitter-glade-3682 on 2024-07-11T22:44:18+01:00
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = 'uiux'
+app = 'uiux-bitter-glade-3682'
 primary_region = 'lhr'
 
 [build]

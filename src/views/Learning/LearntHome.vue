@@ -70,7 +70,6 @@ const handleMouseMove = (event: MouseEvent) => {
   });
 };
 const handleMouseDown = (event: MouseEvent) => {
-  event.preventDefault();
   draggingElement.value = event.target as HTMLElement;
   document.addEventListener('mousemove', handleMouseMove);
   document.addEventListener('mouseup', handleMouseUp);
